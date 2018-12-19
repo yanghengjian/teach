@@ -1,7 +1,8 @@
 package com.tt.teach.pojo;
 
-import javax.xml.crypto.Data;
 import java.io.Serializable;
+import java.util.Date;
+
 /**
  * @作者:YHJ
  * @时间:2018/12/19 14:31
@@ -15,7 +16,7 @@ public class Student implements Serializable{
     private Integer gradeId;
     private String phone;
     private String address;
-    private Data bornDate;
+    private Date bornDate;
     private String email;
     private String identityCard;
 
@@ -75,11 +76,11 @@ public class Student implements Serializable{
         this.address = address;
     }
 
-    public Data getBornDate() {
+    public Date getBornDate() {
         return bornDate;
     }
 
-    public void setBornDate(Data bornDate) {
+    public void setBornDate(Date bornDate) {
         this.bornDate = bornDate;
     }
 
@@ -99,7 +100,7 @@ public class Student implements Serializable{
         this.identityCard = identityCard;
     }
 
-    public Student(Integer studentNo, String loginPwd, String studentName, String sex, Integer gradeId, String phone, String address, Data bornDate, String email, String identityCard) {
+    public Student(Integer studentNo, String loginPwd, String studentName, String sex, Integer gradeId, String phone, String address, Date bornDate, String email, String identityCard) {
         this.studentNo = studentNo;
         this.loginPwd = loginPwd;
         this.studentName = studentName;
