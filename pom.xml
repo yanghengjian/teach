@@ -80,12 +80,12 @@
 			<optional>true</optional>
 			<scope>true</scope>
 		</dependency>
-		<!--mail的依赖-->
+		<!--10.mail的依赖-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
-		<!--文件上传-->
+		<!--11.文件上传-->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
@@ -98,6 +98,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--热部署开启-->
 				<configuration>
 					<fork>true</fork>
 				</configuration>
