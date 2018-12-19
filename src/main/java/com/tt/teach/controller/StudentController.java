@@ -26,10 +26,10 @@ public class StudentController extends BaseController{
     //http://localhost:8080/stu/index
     public String index() {
         String studentName=(String) getSession().getAttribute(SESSION_KEY);
-        if(studentName!=null){
-            return FORWARD+"/student/index";
+        if (studentName!=null){
+            return "/student/index";
         }
-        return REDIRECT+"/student/login";
+        return REDIRECT+"/stu/login";
     }
 
     @RequestMapping(value = "/doLogin",method = RequestMethod.POST)
