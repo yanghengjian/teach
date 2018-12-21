@@ -267,10 +267,12 @@
          //6.对学号进行异步查询
          $("#studentNo").on("blur",function () {
              var studentNo=$("#studentNo").val();
+             $("#stuNo").removeClass();
              if(studentNo!=""){
                  $.ajax({
                      url:"/stu/getStuByNo/"+studentNo,
                      type:"GET",
+
                      success:function (data) {
 
                          $("#stuNo").html("温馨提示:"+data.msg)
