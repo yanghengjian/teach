@@ -19,6 +19,15 @@ public class Student implements Serializable{
     private Date bornDate;
     private String email;
     private String identityCard;
+    private String gradeName;
+
+    public String getGradeName() {
+        return gradeName;
+    }
+
+    public void setGradeName(String gradeName) {
+        this.gradeName = gradeName;
+    }
 
     public Integer getStudentNo() {
         return studentNo;
@@ -100,7 +109,7 @@ public class Student implements Serializable{
         this.identityCard = identityCard;
     }
 
-    public Student(Integer studentNo, String loginPwd, String studentName, String sex, Integer gradeId, String phone, String address, Date bornDate, String email, String identityCard) {
+    public Student(Integer studentNo, String loginPwd, String studentName, String sex, Integer gradeId, String phone, String address, Date bornDate, String email, String identityCard, String gradeName) {
         this.studentNo = studentNo;
         this.loginPwd = loginPwd;
         this.studentName = studentName;
@@ -111,6 +120,7 @@ public class Student implements Serializable{
         this.bornDate = bornDate;
         this.email = email;
         this.identityCard = identityCard;
+        this.gradeName = gradeName;
     }
 
     public Student() {

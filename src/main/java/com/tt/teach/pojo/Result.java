@@ -13,7 +13,7 @@ public class Result implements Serializable {
     private Integer subjectNo;
     private Date examDate;
     private Integer studentResult;
-    private String     studentName;
+    private String studentName;
     private String subjectName;
 
     public Integer getResultNo() {

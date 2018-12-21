@@ -8,4 +8,10 @@ public interface StudentService {
     Student doLogin(Student student);
 
     List<Student> getStudentList();
+
+    int updateStudent(Student student);
+
+    int deleteStudent(Integer stuNo);
+
+    Student getStuByNo(Integer studentNo);
 }
