@@ -80,7 +80,7 @@
 			<optional>true</optional>
 			<scope>true</scope>
 		</dependency>
-		<!--10.mail的依赖-->
+		<!--10.Email的依赖-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
